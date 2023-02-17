@@ -24,6 +24,7 @@ public class LoginToSpiceJet {
 	@BeforeMethod
 	public void login() throws Throwable
 	{
+		String name="amit";
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--disable-notifications");
