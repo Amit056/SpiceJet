@@ -21,9 +21,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LoginToSpiceJet {
 	WebDriver driver;
 	WebDriverWait wait;
+	
 	@BeforeMethod
 	public void login() throws Throwable
 	{
+		int n=12;
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--disable-notifications");
